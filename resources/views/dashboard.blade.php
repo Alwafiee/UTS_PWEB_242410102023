@@ -5,7 +5,7 @@
 @php
     // statistik
     $username     = $username     ?? 'Pengguna';
-    $totalJenis   = $totalJenis   ?? 25;
+    $totalJenis   = $totalJenis   ?? 3;
     $penjualanHariIni = $penjualanHariIni ?? 150;
     $totalPelanggan   = $totalPelanggan   ?? 320;
     $lastLogin    = ($lastLogin ?? now())->format('d F Y, H:i') . ' WIB';
@@ -23,7 +23,7 @@
     <div class="col-md-4 mb-3">
         <div class="card bg-warning bg-opacity-75 text-dark shadow-sm">
             <div class="card-body text-center">
-                <h6 class="mb-1">Total Jenis Roti</h6>
+                <h6 class="mb-1">Total Kategori Roti</h6>
                 <h1 class="mb-1">{{ $totalJenis }}</h1>
                 <small class="text-muted">Jenis roti tersedia</small>
             </div>
