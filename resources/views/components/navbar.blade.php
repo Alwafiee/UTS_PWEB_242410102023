@@ -4,7 +4,6 @@
         {{-- Logo --}}
         <a class="navbar-brand text-dark fw-bold" href="#">Rumah Roti</a>
         
-        {{-- Tombol toggle untuk tampilan mobile --}}
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>

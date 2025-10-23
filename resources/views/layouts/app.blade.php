@@ -18,7 +18,7 @@
     <style>
         html, body { height: 100%; }
         body { 
-            padding-top: 64px; /* kompensasi navbar fixed-top */
+            padding-top: 64px;
             background: #fffdf7;
         }
         .footer-shadow { box-shadow: 0 -2px 8px rgba(0,0,0,.04); }
@@ -30,11 +30,7 @@
 
     {{-- Navbar --}}
     @if (View::exists('components.navbar'))
-        {{-- Pilih salah satu cara render komponen nav: --}}
-        {{-- Jika komponen Blade class-based --}}
         <x-navbar />
-        {{-- ATAU jika partial biasa: --}}
-        {{-- @include('components.navbar') --}}
     @else
         <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
             <div class="container">
@@ -44,8 +40,8 @@
     @endif
 
     {{-- Konten utama --}}
-    <main class="container flex-grow-1 my-4">
-        {{-- Flash message sederhana --}}
+    <main class="container flex1 my-4">
+        {{-- Flash message --}}
         @if (session('status'))
             <div class="alert alert-info alert-dismissible fade show" role="alert">
                 {{ session('status') }}

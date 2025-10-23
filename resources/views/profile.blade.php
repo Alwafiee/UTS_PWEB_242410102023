@@ -14,7 +14,7 @@
         <div class="card shadow-sm">
             <div class="card-header bg-warning text-center py-4">
                 <div class="mb-2">
-                    {{-- avatar placeholder biar nggak kosong --}}
+                
                     <div style="width:88px;height:88px;border-radius:50%;background:#fff;display:inline-block;line-height:88px;">
                         <span style="font-size:28px;font-weight:700;">
                             {{ strtoupper(substr(($username ?? 'U'),0,1)) }}
